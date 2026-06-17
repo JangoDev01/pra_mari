@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Feliz Aniversário Mari ❤️</title>
+        <link rel="stylesheet" href="css/css.css">
+    </head>
+    <body>
+
+        <div class="container">
+
+            <!-- WELCOME -->
+            <div id="welcome" class="card">
+                <h1>🎉 Feliz Aniversário Mari 🎉</h1>
+                <p>Hoje preparei algo especial para ti.</p>
+                <button onclick="showIntro()">Entrar</button>
+            </div>
+
+            <!-- INTRO -->
+            <div id="intro" class="card hidden">
+                <h1>✨ Bem-vinda ao Universo da Mari ✨</h1>
+                <p>Hoje vais embarcar numa pequena aventura.</p>
+                <p>
+                    Teen Wolf 🐺 <br>
+                    Twilight 🌙 <br>
+                    Marvel 🦸
+                </p>
+                <p>Vamos ver o quanto conheces estes universos.</p>
+
+                <button onclick="startQuiz()">Começar</button>
+            </div>
+
+            <!-- QUIZ -->
+            <div id="quiz" class="card hidden">
+
+                <div class="progress">
+                    <div id="bar" class="progress-bar"></div>
+                </div>
+                <h3 id="counter"></h3>
+                <h2 id="question"></h2>
+                <div id="answers"></div>
+
+            </div>
+
+            <!-- RESULT -->
+            <div id="result" class="card hidden">
+                <h1>🎊 Resultado Final 🎊</h1>
+                <div id="score" class="score"></div>
+                <p id="rank"></p>
+                <hr style="margin:20px 0">
+                <p>Hoje não era sobre acertar perguntas.</p>
+                <p>Era sobre celebrar uma data de alguém especial.</p>
+                <p>
+                    Posso não ser alguem muito ligado a datas comemorativas,
+                    E posso passar a impressão de desenterece.
+                    Mas do meu proprio jeito, eu tento prestar atenção
+                </p>
+                <p>
+                    2016 - 2026:
+                    Há 10 anos partilhamos conversas,
+                    risadas, desafios e memórias.
+                </p>
+                <p>
+                    E mesmo nos dias difíceis na Batcaverna 🦇,
+                    Sempre demos um jeito de encontrar a luz e seguir em frente.
+                </p>
+                <p>Obrigado por estes 10 anos de amizade.</p>
+                <p>
+                    Que a tua jornada continue cheia de felicidade,
+                    aventuras e conquistas.
+                </p>
+                <h2>❤️ Feliz Aniversário Mari ❤️</h2>
+                <button class="bat" onclick="grandefinal()">Ver o Grande Final</button>
+            </div>
+
+            <!-- Grande Final -->
+            <div id="finale" class="card hidden">
+                <h1>✨  ✨</h1>
+                <p>
+                    Era pra ter um slide show com varias fotos,
+                    mas por motivos estranhos que eu não sei explicar
+                    não temos fotos juntos 🤪​🤪​🤪​...
+
+                    Então, fica aqui um videozinho com a musica do Bruno Mars...
+                </p>
+                <hr>
+
+                <iframe 
+                    width="90%" 
+                    height="70%" 
+                    src="https://www.youtube.com/embed/Z5Uo6vbDYFg" 
+                    title="Bruno mars, (count on me) Tradução" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" 
+                    allowfullscreen>
+                </iframe>
+
+                <button class="bat" onclick="batcave()">Um pequeno Extra</button>
+            </div>
+        </div>
+
+    <script src="js/js.js"></script>
+    </body>
+</html>

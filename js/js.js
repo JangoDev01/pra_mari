@@ -1,31 +1,5 @@
-
-// Quiz de Teen Wolf, Twilight e Marvel
 // Autor: Miguelito
 // Data: 2024-06-15
-
- // 1. Efeito ao Carregar a Página
-window.addEventListener('DOMContentLoaded', () => {
-    const audioEntrada = document.getElementById('somEntrada');
-    
-    // Tenta reproduzir o som de entrada automaticamente
-    audioEntrada.play().catch(error => {
-        console.log("O autoplay com som foi bloqueado pelo navegador. O áudio iniciou em mute.");
-    });
-});
-
-// 2. Efeito ao Clicar no Botão
-const son_botao = document.getElementById('answers');
-const audioClique = document.getElementById('somClique');
-
-botao.addEventListener('click', () => {
-    // Reinicia o áudio caso o utilizador clique várias vezes seguidas rapidamente
-    audioClique.currentTime = 0; 
-    
-    // Reproduz o som do clique
-    audioClique.play().catch(error => {
-        console.error("Erro ao reproduzir o som do botão:", error);
-    });
-});
 
 /*
  *   constantante para armazenar as perguntas, respostas e a resposta correta de cada pergunta.
